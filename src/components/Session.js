@@ -1,5 +1,3 @@
-import React from "react";
-
 const Session = (key, name, defaultValue) => {
     const stored = sessionStorage.getItem(key);
     if (!stored) {

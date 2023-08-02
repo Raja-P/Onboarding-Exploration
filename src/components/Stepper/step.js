@@ -2,7 +2,7 @@ import React from "react";
 
 const Step = (props) => {
     let classN = 'step';
-    if (props.active === 0 && props.id == 0) {
+    if (props.active === 0 && props.id === 0) {
         classN += ' selected';
     } else if (props.active === 1 && (props.id <= 1 && props.active <= 1)) {
         classN += ' selected';

@@ -14,13 +14,13 @@ const BasicInfo = (props) => {
 
     const validation = () => {
         let flag = true;
-        if (fullName == '') {
+        if (fullName === '') {
             flag = false;
             setFullNameError('error');
         } else {
             setFullNameError('');
         }
-        if (displayName == '') {
+        if (displayName === '') {
             flag = false;
             setDisplayNameError('error');
         } else {

@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* --------------------------- MOBILE VERSION ------------------------------ */
+.page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75em;
+    padding: 5% 0;
+}
+
+.cover {
+    background-color: white;
+    position: relative;
+    text-align: center;
+    font-size: 12px;
+}
+
+.cover-title {
+    font-size: 24px;
+    margin: 20px 0 15px 0;
+    color: #151b28;
+}
+
+.cover-sub-title {
+    color: #5f6c86;
+    margin: 0 0 30px 0;
+}
+
+
+.cover-content {
+    width: 305px;
+    margin: 0 auto;
+}
+
+.cover-fields {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.cover-fields label {
+    font-weight: bold;
+    color: #3c475e;
+}
+
+.cover-fields label span {
+    color: #DDD;
+}
+
+input {
+    border: 1px solid #c6cad0;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+input.error {
+    border: 1px solid #f61616;
+}
+
+input:focus {
+    outline-color: #664de5;
+}
+
+.cover-fieldGroup {
+    width: 100%;
+    height: 40px;
+}
+
+.cover-fieldGroup div {
+    float: left;
+    width: 110px;
+    display: inline;
+    background-color: #f3f3f3;
+    border: 1px solid #c6cad0;
+    height: 35px;
+    margin-top: 5px;
+    border-radius: 5px 0 0 5px;
+    color: #878787;
+    text-align: center;
+    line-height: 35px;
+}
+
+.cover-fieldGroup input {
+    float: left;
+    width: 195px;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+}
+
+.cover-content ul {
+    margin: 0;
+    padding: 0 0 20px 0;
+    overflow: hidden;
+    list-style: none;
+}
+
+
+.cover-list {
+    float: left;
+    width: 47%;
+    border: 1px solid #DDD;
+    padding: 15px;
+    text-align: left;
+    border-radius: 5px;
+    list-style: none;
+}
+
+.cover-list:hover,
+.cover-list.active-list {
+    border-color: #664de5;
+    cursor: pointer;
+}
+
+.cover-list:last-child {
+    float: right;
+}
+
+.cover-list h2 {
+    font-size: 12px;
+    margin: 15px 0 10px 0;
+}
+
+.btn {
+    width: 100%;
+    height: 3em;
+    background-color: #664de5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #FFF;
+    border: none;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #261968;
+    font-weight: bold;
+}
+
+.btn:focus {
+    outline-color: #664de5;
+}
+
+
+.checkmark {
+    display: inline-block;
+    -ms-transform: rotate(45deg);
+    /* IE 9 */
+    -webkit-transform: rotate(45deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+    width: 40px;
+    height: 40px;
+    background: #664de5;
+    border-radius: 40px;
+    -webkit-animation: spin 0.4s linear;
+    -moz-animation: spin 0.4s linear;
+    animation: spin 0.4s linear;
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(-360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(-360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+}
+
+.checkmark_stem {
+    position: absolute;
+    width: 2px;
+    height: 11px;
+    background-color: #FFF;
+    left: 21px;
+    top: 11px;
+    transition: 1s;
+}
+
+.checkmark_kick {
+    position: absolute;
+    width: 8px;
+    height: 2px;
+    background-color: #FFF;
+    left: 15px;
+    top: 22px;
+
+}
+
+/* -------------------- TABLET OPTIMIZATION -------------------- */
+@media only screen and (min-device-width: 37em) {
+    .page {
+        font-size: 1em;
+    }
+}
+
+/* -------------------- DESKTOP OPTIMIZATION -------------------- */
+@media only screen and (min-device-width: 64em) {
+    .page {
+        font-size: 1.25em;
+    }
+}

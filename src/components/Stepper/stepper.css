@@ -1,0 +1,83 @@
+/*progressbar*/
+.progressbar {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0 55px 0;
+    padding: 0;
+}
+
+.progressbar li {
+    font-size: 12px;
+    float: left;
+    position: relative;
+    text-align: center;
+    list-style: none;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #DDD;
+    background: #FFF;
+    border-radius: 30px;
+    margin-right: 48px;
+}
+
+.progressbar li:before,
+.progressbar li:after {
+    content: '';
+    width: 25px;
+    height: 1px;
+    background: #DDD;
+    position: absolute;
+    top: 14px;
+    z-index: 0;
+}
+
+.progressbar li:before {
+    left: -49px;
+    width: 49px;
+    z-index: 1;
+}
+
+.progressbar li:after {
+    left: 28px;
+    z-index: 2;
+}
+
+.progressbar li:first-child:before,
+.progressbar li:last-child:after {
+    content: none;
+}
+
+.progressbar li:last-child {
+    margin-right: 0;
+}
+
+.progressbar li:hover {
+    cursor: pointer;
+}
+
+.progressbar li.selected,
+.progressbar li.selected:after,
+.progressbar li.selected:before {
+    transition: 1s;
+    background-color: #664de5;
+    color: #FFF;
+}
+
+.progressbar li.selected:after {
+    animation: linear;
+    animation-name: run;
+    animation-duration: 2s;
+}
+
+@keyframes run {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 25px;
+    }
+}

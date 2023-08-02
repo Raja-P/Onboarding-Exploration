@@ -20,7 +20,7 @@ const WorkDetails = (props) => {
 
     const validation = () => {
         let flag = true;
-        if (workspaceName == '') {
+        if (workspaceName === '') {
             flag = false;
             setWorkspaceNameError('error');
         } else {

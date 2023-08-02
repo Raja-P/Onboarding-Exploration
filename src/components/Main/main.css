@@ -93,6 +93,7 @@ input:focus {
     width: 195px;
     border-left: none;
     border-radius: 0 5px 5px 0;
+    height: 35px;
 }
 
 .cover-content ul {
@@ -208,15 +209,9 @@ input:focus {
 }
 
 /* -------------------- TABLET OPTIMIZATION -------------------- */
-@media only screen and (min-device-width: 37em) {
+@media only screen and (max-width: 600px) {
     .page {
         font-size: 1em;
-    }
-}
-
-/* -------------------- DESKTOP OPTIMIZATION -------------------- */
-@media only screen and (min-device-width: 64em) {
-    .page {
-        font-size: 1.25em;
+        padding: 15% 0;
     }
 }

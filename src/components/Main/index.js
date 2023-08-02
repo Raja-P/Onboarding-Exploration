@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
 /**
  * This file will hold the Main content that lives in the main body of the site
  * 
  */
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./main.css";
 import logo from '../images/logo.png';

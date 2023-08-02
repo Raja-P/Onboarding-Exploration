@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import avator from './images/avator.png';
 import group from './images/group.png';
 import GetSessionStorageOrDefault from "./Session";
@@ -14,7 +14,7 @@ const WorkPlan = (props) => {
     );
 
     const handleClick = (e) => {
-        if (e.target.id === "plan1" || e.currentTarget.id == "plan1") {
+        if (e.target.id === "plan1" || e.currentTarget.id === "plan1") {
             setPlan1('active-list');
             setPlan2('');
         } else {
